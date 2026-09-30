@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CULTURE / SOUL</title>
+<style>
+:root{--wine:#5b1f2b;--espresso:#241b18;--sand:#eadbc5;--cream:#f7f1e8;--olive:#596044;--paper:#fffaf3;--gold:#b58a55;--ink:#181512}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif}button{font:inherit;cursor:pointer}
+nav{position:sticky;top:0;z-index:9;background:var(--espresso);color:white;padding:17px 5vw;display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:Georgia,serif;letter-spacing:.12em;font-weight:bold}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button,.brand{background:none;border:0;color:white;padding:8px}
+.nav button.active{border-bottom:2px solid var(--sand)}.view{display:none}.view.active{display:block}
+.hero{min-height:78vh;padding:8vw 7vw;display:flex;align-items:end;color:white;background:linear-gradient(115deg,#241b18 5%,#5b1f2b 65%,#596044)}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:800;color:#dec19e}h1,h2,h3{font-family:Georgia,serif}
+.hero h1{font-size:clamp(3.6rem,9vw,8rem);line-height:.88;margin:16px 0 24px}.hero p{max-width:680px;line-height:1.7;font-size:1.1rem}
+.btn{padding:13px 18px;border:1px solid currentColor;background:transparent;color:inherit;font-weight:bold;margin:8px 8px 0 0}.btn.fill{background:var(--sand);color:var(--espresso);border-color:var(--sand)}
+.section{padding:70px 7vw}.alt{background:#eee1cf}.dark{background:var(--wine);color:white}.display{font-size:clamp(2.5rem,5vw,5rem);line-height:1;margin:10px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px}.copy{line-height:1.7;color:#6b615a}.dark .copy{color:#eadbc5}
+.cards,.foodgrid,.map{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.food{background:var(--paper);border:1px solid #ddcfbd;padding:26px;text-align:left;min-height:210px}
+.card{transition:.2s}.card:hover{transform:translateY(-4px)}.tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--wine);font-weight:900}
+.pagehead{padding:75px 7vw 45px;background:linear-gradient(120deg,var(--wine),var(--espresso));color:white}.pagehead h1{font-size:clamp(3.5rem,8vw,7rem);margin:10px 0}
+.schedule{padding:20px 7vw 70px;background:var(--espresso);color:white}.row{display:grid;grid-template-columns:130px 1fr 180px;gap:22px;padding:24px 0;border-bottom:1px solid #ffffff2b}.time{color:#d9b989;font-weight:bold}
+.people{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.person{background:var(--paper);padding:28px;border-left:6px solid var(--olive)}.person p{line-height:1.65;color:#62564f}
+.room{border:2px solid var(--espresso);background:white;padding:28px;min-height:180px;cursor:pointer}.room:nth-child(2n){background:var(--sand)}.room:nth-child(3n){background:#dfe1d1}.room.selected{outline:5px solid var(--gold)}
+.detail{display:none;margin-top:20px;background:var(--espresso);color:white;padding:25px}.detail.show{display:block}.performance{padding:70px 7vw;background:linear-gradient(120deg,#1e1715,var(--wine));color:white}
+.performance h2{font-size:clamp(3rem,6vw,6rem);margin:10px 0}.artists{font:clamp(1.4rem,3vw,2.6rem) Georgia,serif;line-height:1.6;color:#ead4b8}
+.notice{background:#fff0cc;border:1px solid #d2ae69;padding:16px;margin-bottom:22px}.disclaimer{padding:14px 7vw;background:var(--sand);font-size:.78rem;line-height:1.5}footer{background:var(--espresso);color:#d7c8b8;padding:30px 7vw}
+@media(max-width:800px){.split,.cards,.foodgrid,.map,.people{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:4px}.hero h1{font-size:3.6rem}.nav button{font-size:.75rem;padding:6px}}
+</style></head><body>
+<nav><button class="brand" data-go="home">CULTURE / SOUL</button><div class="nav"><button class="active" data-go="home">Home</button><button data-go="schedule">Schedule</button><button data-go="people">People</button><button data-go="venue">Venue</button><button data-go="food">Food</button></div></nav>
+<main>
+<section id="home" class="view active"><header class="hero"><div><div class="eyebrow">Lafayette, Louisiana · One day. Many rooms.</div><h1>Own the room.<br>Shape the culture.</h1><p>A fictional culture, leadership and music experience where bold conversations, Louisiana hospitality and live performance meet.</p><button class="btn fill" data-go="schedule">Explore the day</button><button class="btn" data-go="people">Meet the voices</button></div></header>
+<div class="section split"><div><div class="eyebrow" style="color:var(--wine)">The experience</div><h2 class="display">Not a conference that feels like work.</h2></div><p class="copy">An informational conference-app concept with no registration, no login and no attendee database. The experience centers on simultaneous talks, workshops, a marquee panel, regional food and a closing performance.</p></div>
+<div class="section alt"><div class="cards"><button class="card" data-go="people"><span class="tag">Featured talk</span><h2>Kelly Rowland</h2><strong>Owning Your Space</strong><p>Presence, confidence and making room for your voice.</p></button><button class="card" data-go="people"><span class="tag">Concurrent session</span><h2>Childish Gambino</h2><strong>Building Your Brand</strong><p>Creative identity, reinvention and cultural relevance.</p></button><button class="card" data-go="people"><span class="tag">Mainstage panel</span><h2>Women Who Move Culture</h2><p>Michelle Obama · Keke Palmer · Summer Walker · H.E.R.</p></button></div></div>
+<div class="performance"><div class="eyebrow">Closing performance</div><h2>After the conversations, the room changes.</h2><div class="artists">Rod Wave · Michelle Williams · Chris Brown · Usher</div></div></section>
+
+<section id="schedule" class="view"><header class="pagehead"><div class="eyebrow">Plan your day</div><h1>Schedule</h1><p>Multiple rooms. One connected experience.</p></header><div class="schedule">
+<div class="row"><div class="time">10:00 AM</div><div><h3>Owning Your Space</h3>Kelly Rowland</div><div>Grand Ballroom</div></div>
+<div class="row"><div class="time">11:30 AM</div><div><h3>Building Your Brand</h3>Childish Gambino</div><div>Acadian Room</div></div>
+<div class="row"><div class="time">11:30 AM</div><div><h3>From Idea to Ecosystem</h3>Tyler Perry workshop</div><div>Bayou Studio</div></div>
+<div class="row"><div class="time">2:00 PM</div><div><h3>Controlling the Narrative</h3>Mo'Nique</div><div>Grand Ballroom</div></div>
+<div class="row"><div class="time">3:30 PM</div><div><h3>Women Who Move Culture</h3>Michelle Obama · Keke Palmer · Summer Walker · H.E.R.</div><div>Grand Ballroom</div></div>
+<div class="row"><div class="time">6:30 PM</div><div><h3>Live at CULTURE / SOUL</h3>Rod Wave · Michelle Williams · Chris Brown · Usher</div><div>Performance Hall</div></div></div></section>
+
+<section id="people" class="view"><header class="pagehead"><div class="eyebrow">Speakers · artists · guests</div><h1>The voices.</h1><p>Context behind the conversations.</p></header><div class="section people">
+<article class="person"><span class="tag">Featured talk</span><h2>Kelly Rowland</h2><h3>Owning Your Space</h3><p>A concept session about confidence, visibility, preparation and occupying rooms with intention.</p></article>
+<article class="person"><span class="tag">Creative talk</span><h2>Childish Gambino</h2><h3>Building Your Brand</h3><p>Identity, experimentation, audience expectations and building work that can evolve without losing its point of view.</p></article>
+<article class="person"><span class="tag">Media session</span><h2>Mo'Nique</h2><h3>Controlling the Narrative</h3><p>A hypothetical discussion about criticism, public perception, reputation and maintaining your own voice.</p></article>
+<article class="person"><span class="tag">Workshop</span><h2>Tyler Perry</h2><h3>From Idea to Ecosystem</h3><p>Ownership, production, scale and turning creative vision into repeatable infrastructure.</p></article>
+<article class="person"><span class="tag">Mainstage panel</span><h2>Michelle Obama · Keke Palmer · Summer Walker · H.E.R.</h2><h3>Women Who Move Culture</h3><p>Four perspectives on voice, privacy, visibility, creativity, leadership and influence.</p></article>
+<article class="person"><span class="tag">Special appearance</span><h2>Keith Lee</h2><h3>Culture Meets the Plate</h3><p>Local food, creator influence and the way digital storytelling can redirect attention toward local businesses.</p></article></div></section>
+
+<section id="venue" class="view"><header class="pagehead"><div class="eyebrow">Lafayette, Louisiana</div><h1>Find your room.</h1><p>Concept venue: CAJUNDOME campus.</p></header><div class="section"><div class="notice"><strong>Concept map:</strong> This layout is fictional and is not an official CAJUNDOME floor plan. Tap a room for details.</div><div class="map">
+<div class="room" data-room="Grand Ballroom|Keynotes, the media session and mainstage panel."><span class="tag">A</span><h2>Grand Ballroom</h2><p>Mainstage conversations</p></div>
+<div class="room" data-room="Acadian Room|Concurrent creative talks and brand conversations."><span class="tag">B</span><h2>Acadian Room</h2><p>Creative sessions</p></div>
+<div class="room" data-room="Bayou Studio|A smaller environment for hands-on workshops."><span class="tag">C</span><h2>Bayou Studio</h2><p>Workshops</p></div>
+<div class="room" data-room="Culture Market|Food partners, hospitality and informal gathering."><span class="tag">D</span><h2>Culture Market</h2><p>Food & hospitality</p></div>
+<div class="room" data-room="Performance Hall|The evening music program closes the experience here."><span class="tag">E</span><h2>Performance Hall</h2><p>Live music</p></div>
+<div class="room" data-room="Guest Services|Information, accessibility support and general assistance."><span class="tag">INFO</span><h2>Guest Services</h2><p>Help & information</p></div></div><div id="detail" class="detail"><h2 id="dt"></h2><p id="dc"></p></div></div></section>
+
+<section id="food" class="view"><header class="pagehead"><div class="eyebrow">Food & hospitality</div><h1>Come hungry.</h1><p>Louisiana flavor woven into the experience.</p></header><div class="section foodgrid">
+<div class="food"><span class="tag">Catering partner</span><h2>Rouses Markets</h2><p class="copy">Hypothetical Louisiana-inspired conference fare and grab-and-go options.</p></div>
+<div class="food"><span class="tag">Local flavor</span><h2>Fezzo's</h2><p class="copy">A concept station inspired by Cajun favorites and South Louisiana comfort food.</p></div>
+<div class="food"><span class="tag">Beverage station</span><h2>New Orleans Daiquiris</h2><p class="copy">A hypothetical beverage partner with spirited and non-alcoholic options.</p></div></div><div class="section dark split"><div><div class="eyebrow">Special guest moment</div><h2 class="display">Keith Lee × Lafayette</h2></div><p class="copy">A fictional surprise appearance—part tasting, part creator conversation and part celebration of local businesses.</p></div></section>
+</main>
+<div class="disclaimer">FICTIONAL DESIGN DEMO: Named speakers, performers, vendors and the CAJUNDOME are used only to demonstrate the concept. Participation is not confirmed or implied.</div><footer>CULTURE / SOUL · Conference companion concept · Lafayette, Louisiana</footer>
+<script>
+const views=[...document.querySelectorAll(".view")],navs=[...document.querySelectorAll(".nav button")];
+function go(id){views.forEach(v=>v.classList.toggle("active",v.id===id));navs.forEach(b=>b.classList.toggle("active",b.dataset.go===id));window.scrollTo(0,0);history.replaceState(null,"","#"+id)}
+document.querySelectorAll("[data-go]").forEach(x=>x.onclick=()=>go(x.dataset.go));
+document.querySelectorAll(".room").forEach(x=>x.onclick=()=>{document.querySelectorAll(".room").forEach(r=>r.classList.remove("selected"));x.classList.add("selected");let a=x.dataset.room.split("|");dt.textContent=a[0];dc.textContent=a[1];detail.classList.add("show")});
+let h=location.hash.slice(1);if(["home","schedule","people","venue","food"].includes(h))go(h);
+</script></body></html>
